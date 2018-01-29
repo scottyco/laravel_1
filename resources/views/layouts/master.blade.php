@@ -15,12 +15,11 @@
 </head>
 <body>
     <div id="app">
-      <?php //=resource_path('views/main_menu.blade.php')?>
   <!--< ?php //File::requireOnce(resource_path('views/menu.blade.php'));?> -->
-   @include('main_menu')
+   @section('main_menu')
    @yield('main_menu')
+
         @yield('content')
-        
     </div>
 
     <!-- Scripts -->
